@@ -1,9 +1,4 @@
---- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
----
+# Bayesian ML Questions
 
-# Down the rabbit-hole
-
+## Q-1
+This is an example question.

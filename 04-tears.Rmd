@@ -1,0 +1,8 @@
+--- 
+title: "Teaching"
+author: "Zeel B Patel"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+---
+# Example chapter
+
