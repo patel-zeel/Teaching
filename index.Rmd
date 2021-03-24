@@ -1,4 +1,18 @@
 # Bayesian ML Questions
 
 ## Q-1
-This is an example question.
+Let us say we want to find likelihood of following result out of a fair-coin flip experiment.
+$$
+R = \{H,T,H,H,T,H,T,T,H,H\}
+$$
+Probability of $H=6$ and $T=4$ in this experiment is given by Binomial probabilities,
+$$
+p(H=6,T=4|\theta=0.5) = {10\choose6}(0.5)^6(0.5)^4 
+$$
+
+But, likelihood of our result is given by Bernoulli likelihood equation,
+$$
+p(R|\theta=0.5) = (0.5)^6(0.5)^4
+$$
+
+Why the $10\choose6$ term is not present in the likelihood probability?
