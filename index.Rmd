@@ -31,4 +31,4 @@ You have written a computer program that sometimes compiles and sometimes not (c
 $$
 p(x | µ) = µ^{x}(1 − µ)^{1−x}, x ∈ \{0, 1\}
 $$
-Choose a conjugate prior for the Bernoulli likelihood and compute the posterior distribution p(µ | x1, . . . , xN ).
+Choose a conjugate prior for the Bernoulli likelihood and compute the posterior distribution $p(µ | x_1,x_2,...,x_N)$.
