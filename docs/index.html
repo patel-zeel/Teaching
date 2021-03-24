@@ -73,6 +73,7 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Bayesian ML Questions</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#q-1"><i class="fa fa-check"></i><b>1.1</b> Q-1</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#q-2"><i class="fa fa-check"></i><b>1.2</b> Q-2</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="example-chapter.html"><a href="example-chapter.html"><i class="fa fa-check"></i><b>2</b> Example chapter</a></li>
 <li class="divider"></li>
@@ -103,7 +104,28 @@
 <h1><span class="header-section-number">1</span> Bayesian ML Questions</h1>
 <div id="q-1" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Q-1</h2>
-<p>This is an example question.</p>
+<p>Let us say we want to find likelihood of happening following events when a fair-coin is flipped 10 times.
+<span class="math display">\[
+R = \{H,T,H,H,T,H,T,T,H,H\}
+\]</span>
+Probability <span class="math inline">\(p(H=6, T=4)\)</span> in this experiment is given by Binomial probabilities,
+<span class="math display">\[
+p(H=6,T=4|\theta=0.5) = {10\choose6}(0.5)^6(0.5)^4 
+\]</span>
+But, likelihood of <span class="math inline">\(R\)</span> is given by Bernoulli likelihood,
+<span class="math display">\[
+p(R|\theta=0.5) = (0.5)^6(0.5)^4
+\]</span></p>
+<p>Why the <span class="math inline">\(10\choose6\)</span> term is not present in the likelihood?</p>
+</div>
+<div id="q-2" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Q-2</h2>
+<p>Let us say you go to casino and find a very simple game of a fair-coin. If it turns out <span class="math inline">\(H\)</span>, you win <span class="math inline">\(1\$\)</span> and for <span class="math inline">\(T\)</span>, you loose <span class="math inline">\(1\$\)</span>. Try to answer the following questions if one plays the game <span class="math inline">\(N\)</span> times, when i) <span class="math inline">\(N=5\)</span> ii) <span class="math inline">\(N=6\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li>What is the likelihood of winning <span class="math inline">\(N\$\)</span>?</li>
+<li>What is the likelihood of winning <span class="math inline">\(0\$\)</span>?</li>
+</ol>
+<p>You believed that the coin is fair but you found from your secret sources that <span class="math inline">\(p(H)=0.5, p(H)=0.3\)</span> and <span class="math inline">\(p(H)=0.8\)</span> are all equally possible for any coin. Given that a person won <span class="math inline">\(4\$\)</span> after playing the game <span class="math inline">\(6\)</span> times, what is the probability that he had a coin with <span class="math inline">\(p(H)=0.8\)</span>?</p>
 
 </div>
 </div>
@@ -163,6 +185,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
 bayesian-ml-questions
 q-1
+q-2
 example-chapter
