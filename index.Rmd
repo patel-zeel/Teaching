@@ -23,3 +23,12 @@ Let us say you go to a casino and find a simple game of a fair-coin. If it turns
 1. What is the likelihood of winning $0\$$?
 
 You believed that the coin is fair, but you found from your secret sources that $p(H)=0.5, p(H)=0.3$, and $p(H)=0.8$ are all equally possible for any coin. Given that a person won $4\$$ after playing the game $6$ times, what is the probability that he had a coin with i) $p(H)=0.8$, ii) $p(H)=0.5$ and, iii) $p(H)=0.3$?
+
+## Q-3
+
+You have written a computer program that sometimes compiles and sometimes not (code does not change). You decide to model the apparent stochasticity (success vs. no success) $x$ of the compiler using a Bernoulli distribution with parameter $\mu$:
+
+$$
+p(x | µ) = µ^{x}(1 − µ)^{1−x}, x ∈ \{0, 1\}
+$$
+Choose a conjugate prior for the Bernoulli likelihood and compute the posterior distribution p(µ | x1, . . . , xN ).
