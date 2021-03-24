@@ -22,4 +22,4 @@ Let us say you go to a casino and find a simple game of a fair-coin. If it turns
 1. What is the likelihood of winning $N\$$?
 1. What is the likelihood of winning $0\$$?
 
-You believed that the coin is fair, but you found from your secret sources that $p(H)=0.5, p(H)=0.3$, and $p(H)=0.8$ are all equally possible for any coin. Given that a person won $4\$$ after playing the game $6$ times, what is the probability that he had a coin with $p(H)=0.8$?
+You believed that the coin is fair, but you found from your secret sources that $p(H)=0.5, p(H)=0.3$, and $p(H)=0.8$ are all equally possible for any coin. Given that a person won $4\$$ after playing the game $6$ times, what is the probability that he had a coin with i) $p(H)=0.8$, ii) $p(H)=0.5$ and, iii) $p(H)=0.5$?
